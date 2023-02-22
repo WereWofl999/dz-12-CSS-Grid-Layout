@@ -1,0 +1,255 @@
+h2{
+    font-family: 'Delius Unicase', cursive;
+
+}
+img{
+    border-radius: 20px;
+    transform: all 0.1s ease;
+    display: block;
+}
+
+.blur:hover{
+    transform:scale(1.1) ;
+
+}
+.blur:hover::after{
+    opacity: 0;
+}
+.blur {
+    position: relative;
+    
+}
+.blur:hover .ickonka{
+    opacity: 1;
+}
+
+.blur::after{
+    position: absolute;
+    content: "";
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(360deg, #241F24 0%,
+    rgba(91, 91, 91, 0.447552) 34.11%,
+    rgba(187, 186, 192, 0.26) 62.5%);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: 370px 370px 370px;
+    grid-template-areas: 
+                    "jezael tom tom"
+                    "johan johan federico"
+                    "casey alexsander alexsander";
+    max-width:1170px;
+    width:100%;
+    margin:0 auto;
+    gap: 30px;
+    padding-top: 80px;
+    
+    
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+.one{
+    padding-top:120px;
+    
+}
+.seckt-one-jezael{
+    grid-area: jezael;
+}
+.seckt-one-tom{
+    grid-area: tom;
+}
+.seckt-one-johan{
+    grid-area: johan;
+}
+.seckt-one-federico{
+    grid-area: federico;
+}
+.seckt-one-casey{
+    grid-area: casey;
+}
+.seckt-one-alexsander{
+    grid-area: alexsander;
+}
+/*sektor two*/
+.two{
+    padding-top: 120px;
+}
+.container-two{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+.grid-container-two{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: 370px 770px 370px;
+    grid-template-areas: 
+                        "robert sean sean"
+                        "john john dave"
+                        "leonard leonard rod";
+    max-width:1170px;
+    width:100%;
+    margin:0 auto;
+    gap: 30px;
+    padding-top: 80px;
+}
+.seckt-two-robert{
+    grid-area: robert;
+}
+.seckt-two-sean{
+    grid-area: sean;
+}
+.seckt-two-john{
+    grid-area: john;
+}
+.seckt-two-dave{
+    grid-area: dave;
+}
+.seckt-two-leonard{
+    grid-area: leonard;
+}
+.seckt-two-rod{
+    grid-area: rod;
+}
+/*sektor three*/
+
+.three{
+    padding-top: 120px;
+}
+.container-three{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+.grid-container-three{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: 370px 370px 370px;
+    grid-template-areas: 
+                        "pooja dom seht "
+                        "devn dom buscher"
+                        "sincerely seth-1 buscher"
+                        "sincerely melissa melissa"
+                        "brooke brooke clem";
+    max-width:1170px;
+    width:100%;
+    margin:0 auto;
+    gap: 30px;
+    padding-top: 80px;
+}
+.seckt-three-pooja{
+    grid-area: pooja;
+}
+.seckt-three-dom{
+    grid-area: dom;
+}
+.seckt-three-seht{
+    grid-area:seht ;
+}
+.seckt-three-devn{
+    grid-area:devn ;
+}
+.seckt-three-buscher{
+    grid-area: buscher;
+}
+.seckt-three-sincerely{
+    grid-area:sincerely;
+}
+.seckt-three-seth-1{
+    grid-area: seth-1;
+}
+.seckt-three-melissa{
+    grid-area:melissa ;
+}
+.seckt-three-brooke{
+    grid-area:brooke ;
+}
+.seckt-three-clem{
+    grid-area: clem;
+}
+
+.photo_text{
+    font-family: 'Roboto',sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+}
+.text-photo-name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: white;
+}
+.text-photo-date{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #E0E0E0;
+}
+.ickonka{
+    max-width: 770px;
+   width: 100%;
+   height: 80px;
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   opacity: 0;
+   transition: .3s all;
+   top: 0;
+   left: 0;
+   
+}
+.ickonka:hover{
+    opacity: 1;
+}
+.ickonka_1{
+    width: 40px;
+    height: 40px;
+    background: #E0E0E0;
+    opacity: 0.5;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    z-index: 1;
+}
+.ickonka_1 :hover{
+    opacity: 1;
+}
+.icknka_2{
+    width: 40px;
+    height: 40px;
+    background: #E0E0E0;
+    opacity: 0.5;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    z-index: 1;
+}
+.icknka_2 :hover{
+    opacity: 1;
+}
